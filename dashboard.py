@@ -92,32 +92,5 @@ if df is not None:
 
     st.divider()
 
-    # --- Fitur Tambahan: Prediksi Sederhana (ML) ---
-    st.subheader("🤖 Prediksi Jumlah Sewa (Machine Learning Demo)")
-    st.markdown("Masukkan kondisi cuaca untuk memprediksi jumlah penyewaan sepeda harian.")
-
-    # Input User
-    col_input1, col_input2, col_input3 = st.columns(3)
-    with col_input1:
-        input_temp = st.slider("Suhu (Normalized 0-1)", 0.0, 1.0, 0.5)
-    with col_input2:
-        input_hum = st.slider("Kelembaban (Normalized 0-1)", 0.0, 1.0, 0.5)
-    with col_input3:
-        input_wind = st.slider("Kecepatan Angin (Normalized 0-1)", 0.0, 1.0, 0.2)
-
-    # Train Model on the fly (Simple implementation)
-    X = df[['temp', 'hum', 'windspeed']]
-    y = df['cnt']
-    model = LinearRegression()
-    model.fit(X, y)
-    
-    prediction = model.predict([[input_temp, input_hum, input_wind]])[0]
-
-    st.success(f"Prediksi Jumlah Penyewaan Sepeda: **{int(prediction)} unit**")
-    
-    # --- Checkbox Data Raw ---
-    if st.checkbox("Tampilkan Data Mentah"):
-        st.write(filtered_df)
-
 else:
     st.info("Menunggu file dataset...")
