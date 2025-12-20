@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Proyek Analisis Data: Bike Sharing Dataset 🚲
 
 Repository ini berisi proyek analisis data end-to-end menggunakan **Bike Sharing Dataset**. Proyek ini mencakup pembersihan data, eksplorasi data (EDA), visualisasi, dan dashboard interaktif menggunakan Streamlit.
@@ -19,22 +18,16 @@ Sumber: [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-da
 
 ### 1. Setup Environment
 Pastikan Anda memiliki Python terinstal. Clone repository ini dan instal dependencies:
+```pip install -r requirements.txt```
 
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
 
 ### 2. Menjalankan Notebook
 Buka Jupyter Notebook atau VS Code untuk menjalankan analisis:
-\`\`\`bash
-jupyter notebook notebook.ipynb
-\`\`\`
+```jupyter notebook notebook_analysis.ipynb```
 
 ### 3. Menjalankan Dashboard Streamlit
 Untuk melihat dashboard interaktif, jalankan perintah berikut di terminal:
-\`\`\`bash
-streamlit run dashboard.py
-\`\`\`
+```streamlit run dashboard.py```
 
 ## 💡 Insight Singkat
 1. **Pola Musiman**: Penyewaan sepeda mencapai puncaknya pada musim Gugur (Fall) dan paling rendah pada musim Semi (Spring).
@@ -43,4 +36,4 @@ streamlit run dashboard.py
 
 ## 👤 Profil
 **Nama**: Duhairillah
-**Email**: duhairillahred927@gmail.com
+**Jurusan**: Teknik Informatika

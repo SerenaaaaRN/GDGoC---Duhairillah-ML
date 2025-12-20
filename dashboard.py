@@ -10,10 +10,8 @@ st.set_page_config(
     layout="wide"
 )
 
-
 @st.cache_data
 def load_data():
-    # Pastikan file day.csv ada di folder yang sama
     try:
         df = pd.read_csv('day.csv')
         
