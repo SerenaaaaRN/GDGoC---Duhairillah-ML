@@ -27,7 +27,7 @@ Buka Jupyter Notebook atau VS Code untuk menjalankan analisis:
 
 ### 3. Menjalankan Dashboard Streamlit
 Untuk melihat dashboard interaktif, jalankan perintah berikut di terminal:
-```streamlit run dashboard.py```
+```streamlit run app.py```
 
 ## 💡 Insight Singkat
 1. **Pola Musiman**: Penyewaan sepeda mencapai puncaknya pada musim Gugur (Fall) dan paling rendah pada musim Semi (Spring).
